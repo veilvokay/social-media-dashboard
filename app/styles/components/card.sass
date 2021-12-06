@@ -1,4 +1,55 @@
 @use '../utils' as *
 
 .card
-    padding: rem(20)
+    padding: rem(25)
+    width: rem(255)
+    height: rem(216)
+    background-color: var(--dark-card)
+    color: var(--dark-text1)
+    text-align: center
+
+    &__platform
+        margin-bottom: rem(28)
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__icon
+        margin-right: rem(8)
+        display: inline-flex
+        &--fb
+        &--tw
+        &--ig
+        &--yt
+
+    &__username
+        font-size: rem(12)
+        font-weight: 700
+
+    &__followers
+        margin-bottom: rem(25)
+
+    &__count
+        margin-bottom: rem(4)
+        font-weight: 700
+        letter-spacing: rem(-2)
+        color: var(--light-bg)
+        line-height: 1
+        &--big
+            font-size: rem(56)
+        &--small
+
+    &__label
+        font-size: rem(12)
+        font-weight: 400
+        letter-spacing: rem(5)
+        color: var(--dark-text1)
+        text-transform: uppercase
+
+    &__change
+        font-size: rem(12)
+        font-weight: 700
+        &--up
+            color: var(--lime-green)
+        &--down
+            color: var(--bright-red)
