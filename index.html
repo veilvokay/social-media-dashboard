@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | [Social Media Platform]</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +16,34 @@
   <link rel="stylesheet" href="/dist/styles.css">
   <script defer src="/dist/script.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <h1>asdaslkdasj</h1>
-  Social Media Dashboard
-  Total Followers: 23,004
+  <header class="header container">
+    <div class="header__title">
+      <h1>Social Media Dashboard</h1>
+      <span class="header__subtitle">Total Followers: 23,004</span>
+    </div>
 
-  Dark Mode
+    <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
+      <div class="toggle__wrapper">
+        <input type="radio" name="theme" id="dark">
+        <input type="radio" name="theme" id="system">
+        <input type="radio" name="theme" id="light" checked>
+        <span aria-hidden="true" class="toggle__background"></span>
+        <span aria-hidden="true" class="toggle__button"></span>
+      </div>
+      <label for="dark">Dark</label>
+      <label for="system">System</label>
+      <label for="light">Light</label>
+    </fieldset>
+  </header>
+
+  <main>
+
+  </main>
+
+  
 
   
 
