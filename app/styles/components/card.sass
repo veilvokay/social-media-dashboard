@@ -2,8 +2,8 @@
 
 .card
     padding: rem(25)
-    width: rem(255)
     height: rem(216)
+    border-radius: rem(5)
     background-color: var(--dark-card)
     color: var(--dark-text1)
     text-align: center
@@ -13,6 +13,15 @@
         display: flex
         justify-content: center
         align-items: center
+
+    &--fb
+        border-top: rem(4) solid var(--facebook)
+    &--tw
+        border-top: rem(4) solid var(--twitter)
+    &--ig
+        border-top: rem(4) solid var(--twitter)
+    &--yt   
+        border-top: rem(4) solid var(--youtube)
 
     &__icon
         margin-right: rem(8)
@@ -28,6 +37,8 @@
 
     &__followers
         margin-bottom: rem(25)
+        display: flex
+        flex-direction: column
 
     &__count
         margin-bottom: rem(4)
@@ -47,9 +58,14 @@
         text-transform: uppercase
 
     &__change
+        display: flex
+        justify-content: center
+        align-items: center
         font-size: rem(12)
         font-weight: 700
         &--up
             color: var(--lime-green)
         &--down
             color: var(--bright-red)
+        img
+            margin-right: rem(4)

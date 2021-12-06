@@ -7,3 +7,13 @@
 
     @include breakpoint(large)
         padding: 0
+
+.card-grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: rem(30)
+
+    @include breakpoint(medium)
+        grid-template-columns: repeat(2, 1fr)
+    @include breakpoint(large)
+        grid-template-columns: repeat(4, 1fr)
