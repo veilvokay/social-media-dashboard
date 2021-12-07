@@ -1,35 +1,51 @@
 @use '../utils' as *
 
 .card
+    position: relative
+    overflow: hidden
     padding: rem(25)
     height: rem(216)
     border-radius: rem(5)
     background-color: var(--dark-card)
     color: var(--dark-text1)
     text-align: center
+    cursor: pointer
+    transition: background-color .15s ease-in-out
+    &:hover
+        background-color: var(--dark-card-hover)
 
     &__platform
+        margin-top: rem(4)
         margin-bottom: rem(28)
+        height: rem(20)
         display: flex
         justify-content: center
         align-items: center
+
+    &__subtitle
+        font-size: rem(14)
+        font-weight: 700
 
     &--fb
         border-top: rem(4) solid var(--facebook)
     &--tw
         border-top: rem(4) solid var(--twitter)
     &--ig
-        border-top: rem(4) solid var(--twitter)
+        padding-top: calc(rem(25) + rem(5))
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            height: rem(4)
+            width: 100%
+            background: linear-gradient(225deg,var(--instagram-end),var(--instagram-middle),var(--instagram-start))
     &--yt   
         border-top: rem(4) solid var(--youtube)
 
     &__icon
         margin-right: rem(8)
         display: inline-flex
-        &--fb
-        &--tw
-        &--ig
-        &--yt
 
     &__username
         font-size: rem(12)
@@ -49,6 +65,7 @@
         &--big
             font-size: rem(56)
         &--small
+            font-size: rem(32)
 
     &__label
         font-size: rem(12)
