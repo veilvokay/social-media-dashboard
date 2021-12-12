@@ -1,2 +1,2 @@
-"use strict";console.log("Hi there");
+"use strict";window.addEventListener("DOMContentLoaded",(function(e){var t=document.body,n=document.querySelector(".toggle__wrapper"),d=document.querySelectorAll(".toggle__wrapper input");document.getElementById("dark"),document.getElementById("light");n.addEventListener("click",(function(){var e=Array.from(d).filter((function(e){return e.checked}))[0].id;t.className="",t.classList.add(e)}))}));
 //# sourceMappingURL=script.js.map
